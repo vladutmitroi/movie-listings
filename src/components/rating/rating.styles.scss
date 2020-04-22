@@ -1,0 +1,18 @@
+.rating {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: rgba(30, 106, 177, 0.6);
+  width: 60px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+.rating:focus,
+.rating:hover {
+  border-color: rgba(30, 106, 177, 1);
+}
+@media (max-width: 767px) {
+  .rating {
+    font-size: 14px;
+  }
+}
