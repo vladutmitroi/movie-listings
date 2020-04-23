@@ -78,3 +78,5 @@ Install dependencies using `npm install` inside the project`s root folder
 Update `key` inside `/src/App.js` with your TMDb API key
 
 Run `npm start` to start in development mode and run the project
+
+The project is also hosted on github pages : https://vladutmitroi.github.io/movie-listings
