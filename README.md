@@ -25,19 +25,22 @@ The app has the following structure:
 	    App.js
         App.css
         components/
+	    filters/
+	    	Filters.component.jsx
             genres-list/
-                genres-list.component.jsx
+                GenresList.component.jsx
+		GenresItem.component.jsx
                 genres-list.styles.scss
             loader/
-                loader.component.jsx
+                Loader.component.jsx
                 loader.styles.scss
             movie-card/
-                movie-card.component.jsx
+                MovieCard.component.jsx
                 movie-card.styles.scss
             movie-list/
-                movie-list.component.jsx
+                MovieList.component.jsx
             rating/
-                rating.component.jsx
+                Rating.component.jsx
                 rating.styles.scss
         redux/
             actions/
@@ -54,10 +57,9 @@ The app has the following structure:
 ## App details
 
 - Inside `src/index.js`, the `App.js` component will be rendered.
-- App.js is the parent component, where the data from redux store is being passed as props and then to its children components.
 - The children components rendered in App.js
   - Loader component - shown while the data is retrieved
-  - Filter container - GenresList and Rating components, which will be used to filter the movies
+  - Filter component - container for GenresList and Rating components, which will be used to filter the movies
   - Movies container - MoviesList where MovieCard component will be rendered
   - Movie details - using react router we navigate to a details page, showing additional details for a selected movie
 
